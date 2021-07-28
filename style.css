@@ -79,17 +79,6 @@ nav {
   align-items: center;
 }
 
-/* .infoConteneur {
-  width: 20px;
-  height: 20px;
-  border: 1px solid #f2f2f2;
-  border-radius: 50%;
-  background: #deebff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .info-logo {
   color: #0065fc;
   font-size: 0.8rem;
@@ -108,10 +97,6 @@ nav {
   justify-content: left;
   align-items: center;
 }
-
-/* .filtre-title {
-  display: inline-flex;
-} */
 
 .filter-link {
   display: flex;
@@ -148,12 +133,6 @@ nav {
   font-weight: bold;
   padding: 0 1rem;
 }
-/* .filtre-text {
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  white-space: nowrap;
-} */
 
 /* Activités à Marseille */
 
