@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,11 +19,28 @@
   </head>
   <body>
     <!-- Header -->
-<!-- test commit -->
+
     <header>
       <img src="./images/logo/Reservia.svg" alt="logo" />
       <nav>
-        <ul>
+        <ul class="navbar">
+          <li class="navbar-element navbar-element-hebergement">
+            <a class="navbar-link link-hebergements" href="#">Hébergements</a>
+          </li>
+          <li class="navbar-element">
+            <a class="navbar-link link-activites" href="#">Activités</a>
+          </li>
+          <li class="navbar-element">
+            <a class="navbar-link link-sub" href="#">S'inscrire</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- <header>
+      <img src="./images/logo/Reservia.svg" alt="logo" />
+      <nav>
+        <ul class="navbar">
           <li>
             <a class="navbar_link hebergementLink" href="#">Hébergements</a>
           </li>
@@ -33,23 +50,27 @@
           <li><a class="navbar_link subLink" href="#">S'inscrire</a></li>
         </ul>
       </nav>
-    </header>
+    </header> -->
+
     <!-- /header -->
 
     <main>
-      <section>
-        <!-- Search bar -->
-        <div>
-          <h2>Trouvez votre hébergements pour des vacances de rêve</h2>
-          <p>En plein centre ville ou en pleine nature</p>
-        </div>
-        <div class="searchBar">
-          <i class="fas fa-map-marker-alt"></i>
-          <input type="text" placeholder="Marseille, France" />
-          <button>Rechercher</button>
-        </div>
-        <!-- Filters -->
-        <div class="filters">
+      <!-- Search bar -->
+      <div>
+        <h2>Trouvez votre hébergements pour des vacances de rêve</h2>
+        <p>En plein centre ville ou en pleine nature</p>
+      </div>
+      <div class="searchbar">
+        <i class="fas fa-map-marker-alt"></i>
+        <input
+          class="searchbar-input"
+          type="text"
+          placeholder="Marseille, France"
+        />
+        <button class="searchbar-button">Rechercher</button>
+      </div>
+      <!-- Filters -->
+      <!-- <div class="filters">
           <h3 class="filtreTitle">Filtres</h3>
           <div class="filterlink">
             <div class="icone">
@@ -73,26 +94,63 @@
             <div class="icone"><i class="fas fa-dog"></i></div>
             <h3 class="filtretext">Animaux autorisés</h3>
           </div>
+        </div> -->
+
+      <div class="filters">
+        <h3 class="filtre-title">Filtres</h3>
+        <div class="filter-link">
+          <i class="fas fa-money-bill-wave icone icone-one"></i>
+          <span class="filter-text">Économique</span>
         </div>
-        <!-- info -->
-        <div class="info">
+        <div class="filter-link">
+          <i class="fas fa-child icone icone-two"></i>
+          <span class="filter-text">Familial</span>
+        </div>
+        <div class="filter-link">
+          <i class="fas fa-heart icone icone-three"></i>
+          <span class="filter-text">Romantique</span>
+        </div>
+        <div class="filter-link">
+          <i class="fas fa-dog icone icone-four"></i>
+          <span class="filter-text">Animaux autorisés</span>
+        </div>
+      </div>
+      <!-- info -->
+
+      <p class="info">
+        <i class="fas fa-info info-logo"></i>
+        <span class="info-text"
+          >Plus de 500 logements sont disponibles dans cette ville</span
+        >
+      </p>
+
+      <!-- <div class="info">
           <div class="infoConteneur">
-            <i class="fas fa-info"></i> </div>
-            <p class="sidenoteText">
+            <i class="fas fa-info"></i>
+          </div>
+          <p class="sidenoteText">
             Plus de 500 logements sont disponibles dans cette ville
           </p>
-          </div>
-
-          
-        </div>
-      </section>
+        </div> -->
 
       <!-- Section Activités à Marseille -->
 
       <section>
         <h2>Activités à Marseille</h2>
 
-        <div class="bigBlockActivities">
+        <div class="container-activities">
+          <div class="container-activity">
+            <a class="activity" href="#">
+              <img
+                class="activity-img"
+                src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                alt="une photo du port de Marseille"
+              />
+              <span class="activity-text">Vieux Port</span></a
+            >
+          </div>
+        </div>
+        <!-- <div class="bigBlockActivities">
           <div class="blockActivities">
             <div class="container">
               <a class="linkActivities" href="#">
@@ -149,7 +207,7 @@
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
     </main>
     <!-- Footer -->

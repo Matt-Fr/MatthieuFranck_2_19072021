@@ -9,46 +9,46 @@ html {
 }
 
 /* header */
-/* just a comment */
+
 /* navbar */
 header {
   display: flex;
-
   justify-content: space-between;
 }
 nav {
+  width: 40%;
+}
+.navbar {
   display: flex;
-
-  padding: 1rem;
+  justify-content: space-around;
+  margin: 0;
 }
 
-.navbar_link {
-  text-decoration: none;
-  margin: 1rem;
-  color: black;
-  padding: 2rem;
+.navbar-element {
+  padding: 2rem 1rem;
+  list-style-type: none;
 }
-
-.hebergementLink,
-.navbar_link:hover {
-  border-top: 3px solid #0065fc;
+.navbar-element-hebergement {
+  border-top: 2px solid #0065fc;
+}
+.navbar-element:hover {
+  border-top: 2px solid #0065fc;
+}
+.navbar-link:hover {
   color: #0065fc;
 }
 
-nav ul {
-  list-style: none;
-
-  display: flex;
-}
-
-.subLink {
+.link-sub,
+.link-hebergements {
   color: #0065fc;
+}
+.link-sub {
   font-weight: bold;
 }
 
 /* searchbar */
 
-.searchBar {
+.searchbar {
   display: flex;
   margin: 2rem 0;
 }
@@ -58,12 +58,12 @@ nav ul {
   border-radius: 20px 0 0 20px;
   padding: 1rem;
 }
-input {
+.searchbar-input {
   padding: 1rem;
   font-size: 1rem;
   border: 1px solid #f2f2f2;
 }
-button {
+.searchbar-button {
   padding: 1rem;
   background: #0065fc;
   border: 1px solid #0065fc;
@@ -79,7 +79,7 @@ button {
   align-items: center;
 }
 
-.infoConteneur {
+/* .infoConteneur {
   width: 20px;
   height: 20px;
   border: 1px solid #f2f2f2;
@@ -88,86 +88,101 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.fa-info {
+.info-logo {
   color: #0065fc;
   font-size: 0.8rem;
+  border: 2px solid #f2f2f2;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
 }
-.sidenoteText {
-  margin-left: 10px;
+.info-text {
+  margin-left: 0.5rem;
 }
+
 /* Section Search/filters */
 .filters {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
+  align-items: center;
 }
 
-.filtreTitle {
+/* .filtre-title {
   display: inline-flex;
-}
+} */
 
-.filterlink {
-  display: inline-flex;
+.filter-link {
+  display: flex;
   margin: 0 1rem;
   border: 3px solid #f2f2f2;
   border-radius: 50px;
+  justify-content: center;
+  align-items: center;
 }
 .icone {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #deebff;
+
   background: #deebff;
   border-radius: 100px;
-  padding: 15px;
   color: #0065fc;
+  margin: -2px;
 }
-.filtretext {
+.icone-one {
+  padding: 1rem 0.8rem;
+}
+.icone-two {
+  padding: 1rem 1.1rem;
+}
+.icone-three {
+  padding: 1rem;
+}
+.icone-four {
+  padding: 1rem 0.9rem;
+}
+
+.filter-text {
+  font-weight: bold;
+  padding: 0 1rem;
+}
+/* .filtre-text {
   display: flex;
   align-items: center;
   padding: 0 1rem;
   white-space: nowrap;
-}
+} */
+
 /* Activités à Marseille */
 
-.bigBlockActivities {
-  display: flex;
-  justify-content: space-around;
-}
-
-.container {
-  height: 500px;
-  width: 300px;
-  display: flex;
-}
-.cardactivity {
-  height: 500px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-
-  position: relative;
-  border: 2px solid black;
-  border-radius: 5px;
-  box-shadow: 3px 3px 3px grey;
-}
-
-.imgactivity {
-  display: flex;
-  height: 87%;
+.container-activities {
   width: 100%;
-  object-fit: cover;
-  position: absolute;
+  border: 2px solid green;
 }
-.titleActivityOne {
-  margin-left: 15px;
-  position: absolute;
-  bottom: 0.2%;
+.container-activity {
+  border: 2px solid orange;
 }
-a {
+.activity {
+  display: flex;
+  width: 18rem;
+  height: 30rem;
+
+  border-radius: 20px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  box-shadow: 0 0 1rem grey;
   text-decoration: none;
+}
+.activity-img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+}
+.activity-text {
+  padding-left: 1.5rem;
+  font-weight: bold;
   color: black;
 }
 
