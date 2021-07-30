@@ -141,14 +141,50 @@ nav {
   font-weight: bold;
   padding: 0 1rem;
 }
+/* Les plus populaires */
+.accommodation-main-container {
+  display: flex;
+}
+.popular-accommodation {
+  background: #f2f2f2;
+  margin: 1rem;
+  border-radius: 20px;
+  padding: 1rem;
+}
+.popular-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-arrow {
+  font-size: 1.5rem;
+}
+.accommodation-popular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background: white;
+  text-decoration: none;
+  border: 5px solid white;
+  border-radius: 20px;
+  width: 21rem;
+  height: 8.5rem;
+  overflow: hidden;
+  color: black;
+}
+.popular-img {
+  width: 38%;
+  height: 100%;
+  object-fit: cover;
+}
 /* hébergements à Marseille */
 
 .section-accommodation {
   background: #f2f2f2;
-  padding: 1rem;
   margin: 1rem;
   border-radius: 20px;
-  padding: 2rem;
+  padding: 1rem;
 }
 .container-accommodation {
   display: flex;
