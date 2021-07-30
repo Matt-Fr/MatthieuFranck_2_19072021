@@ -159,10 +159,16 @@ nav {
 .logo-arrow {
   font-size: 1.5rem;
 }
+.popular-description {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+.popular-description-text {
+}
 .accommodation-popular {
   display: flex;
-  justify-content: center;
-  align-items: center;
+
   margin: 1rem;
   background: white;
   text-decoration: none;
@@ -177,6 +183,8 @@ nav {
   width: 38%;
   height: 100%;
   object-fit: cover;
+}
+.popular-img-third {
 }
 /* hébergements à Marseille */
 
