@@ -144,6 +144,11 @@ nav {
   font-weight: bold;
   padding: 0 1rem;
 }
+.filter-link:hover {
+  background: #0065fc;
+  color: white;
+  cursor: pointer;
+}
 /* Les plus populaires */
 .accommodation-main-container {
   display: flex;
@@ -216,17 +221,19 @@ nav {
   display: flex;
   flex-wrap: wrap;
   margin: 1rem 0;
+  flex-direction: column;
+  justify-content: space-around;
   background: white;
   text-decoration: none;
   border: 5px solid white;
   border-radius: 20px;
-  width: 15rem;
+  width: 28%;
   height: 12rem;
   overflow: hidden;
   color: black;
 }
 .accommodation-img {
-  width: 100%;
+  min-width: 100%;
   height: 60%;
   object-fit: cover;
 }
@@ -266,6 +273,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 22%;
 }
 .activity {
   display: flex;
@@ -276,17 +284,17 @@ nav {
   text-decoration: none;
 }
 .activity-big {
-  width: 19rem;
+  width: 100%;
   height: 27rem;
 }
 
 .activity-medium {
-  width: 19rem;
+  width: 100%;
   height: 15rem;
 }
 
 .activity-small {
-  width: 19rem;
+  width: 100%;
   height: 10rem;
 }
 
