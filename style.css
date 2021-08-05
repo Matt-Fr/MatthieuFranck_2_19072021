@@ -123,11 +123,12 @@ nav {
   align-items: center;
 
   background: #deebff;
-  border-radius: 100px;
+  border-radius: 50%;
   color: #0065fc;
-  margin: -2px;
+  margin: -3px;
+  padding: 1rem;
 }
-.icone-one {
+/* .icone-one {
   padding: 1rem 0.8rem;
 }
 .icone-two {
@@ -138,7 +139,7 @@ nav {
 }
 .icone-four {
   padding: 1rem 0.9rem;
-}
+} */
 
 .filter-text {
   font-weight: bold;
@@ -152,12 +153,14 @@ nav {
 /* Les plus populaires */
 .accommodation-main-container {
   display: flex;
+  width: 100%;
 }
 .popular-accommodation {
   background: #f2f2f2;
   margin: 0 1rem;
   border-radius: 20px;
   padding: 1rem;
+  width: 30%;
 }
 .popular-header {
   display: flex;
@@ -184,7 +187,7 @@ nav {
   text-decoration: none;
   border: 5px solid white;
   border-radius: 20px;
-  width: 21rem;
+  /* width: 21rem; à changer */
   height: 8.5rem;
   overflow: hidden;
   color: black;
@@ -194,7 +197,9 @@ nav {
   height: 100%;
   object-fit: cover;
 }
-
+.bold-text {
+  font-weight: bold;
+}
 /* hébergements à Marseille */
 
 .section-accommodation {
@@ -203,6 +208,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 70%;
 
   padding: 2rem;
 }
@@ -215,7 +221,7 @@ nav {
 .container-accommodation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .accommodation {
   display: flex;
@@ -248,12 +254,19 @@ nav {
 .accommodation-name {
   padding-left: 0.5rem;
 }
-.star-blue {
+.accommodation-stars i {
+  color: #f2f2f2;
+}
+.accommodation-stars i.active {
+  color: #0065fc;
+}
+
+/* .star-blue {
   color: #0065fc;
 }
 .star-grey {
   color: #f2f2f2;
-}
+} */
 
 .accomodation-show-more {
   font-weight: bold;
@@ -274,28 +287,30 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   width: 22%;
+  height: 27rem;
 }
 .activity {
   display: flex;
   border-radius: 20px;
   flex-wrap: wrap;
   overflow: hidden;
-  box-shadow: 0 0 1rem grey;
+  box-shadow: 1rem 1rem 1rem 2rem #f2f2f2;
   text-decoration: none;
 }
 .activity-big {
   width: 100%;
-  height: 27rem;
+  height: 100%;
+  /* mettre height parent et % dessous */
 }
 
 .activity-medium {
   width: 100%;
-  height: 15rem;
+  height: 53%;
 }
 
 .activity-small {
   width: 100%;
-  height: 10rem;
+  height: 37%;
 }
 
 .activity-img {
@@ -314,7 +329,7 @@ nav {
 }
 
 .activity-text {
-  padding-left: 1.5rem;
+  padding: 0 1.5rem;
   font-weight: bold;
   color: black;
 }
@@ -335,6 +350,7 @@ footer {
   align-content: space-between;
   flex-flow: column;
   margin: 2rem;
+  width: 70%;
 }
 .linkfooter {
   padding: 1rem 0;
