@@ -28,8 +28,11 @@ nav {
 }
 
 .navbar-element {
-  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
   list-style-type: none;
+  width: 33%;
 }
 .navbar-element-hebergement {
   border-top: 2px solid #0065fc;
@@ -40,7 +43,7 @@ nav {
 .navbar-link {
   text-decoration: none;
 }
-.navbar-link:hover {
+.navbar-element:hover {
   color: #0065fc;
 }
 .link-activites:visited {
