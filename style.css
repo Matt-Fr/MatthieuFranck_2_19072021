@@ -247,7 +247,8 @@ nav {
   object-fit: cover;
 }
 .accommodation-name {
-  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
 }
 .accommodation-price {
   font-size: 0.9rem;
