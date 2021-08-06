@@ -331,7 +331,6 @@ nav {
 .activity-big {
   width: 100%;
   height: 100%;
-  /* mettre height parent et % dessous */
 }
 
 .activity-medium {
@@ -387,4 +386,41 @@ footer {
   padding: 1rem 0;
   text-decoration: none;
   color: black;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+  /* .container-activities {
+    flex-direction: column;
+  }
+
+  .container-activity {
+    width: 100%;
+    max-height: auto;
+    height: auto;
+    justify-content: center;
+  }
+  .activity-big,
+  .activity-medium {
+    height: 37%;
+  }
+  .img-big,
+  .img-medium {
+    height: 67%;
+  } */
+
+  /* MQ footer */
+
+  footer {
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  .footer {
+    margin: 1rem;
+    padding: 0 0 0 1rem;
+  }
+  .linkfooter {
+    padding: 0.5rem 0;
+  }
 }
