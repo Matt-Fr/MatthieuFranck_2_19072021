@@ -87,6 +87,13 @@ nav {
   cursor: pointer;
 }
 
+.research-text {
+  font-weight: bold;
+}
+.search-icon,
+.fa-search {
+  display: none;
+}
 /* info */
 
 .info {
@@ -181,6 +188,7 @@ nav {
   cursor: pointer;
 }
 /* Les plus populaires */
+
 .accommodation-main-container {
   display: flex;
   width: 100%;
@@ -189,8 +197,9 @@ nav {
   background: #f2f2f2;
   margin: 0 1rem;
   border-radius: 20px;
-  padding: 1rem;
+  padding: 2rem;
   width: 30%;
+  margin: 2rem 1rem;
 }
 .popular-header {
   display: flex;
@@ -204,11 +213,14 @@ nav {
   display: flex;
   align-content: space-around;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .popular-description-text {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
+
 .accommodation-popular {
   display: flex;
 
@@ -224,6 +236,7 @@ nav {
 }
 .popular-img {
   min-width: 38%;
+  max-width: 38%;
   height: 100%;
   object-fit: cover;
 }
@@ -239,7 +252,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   width: 70%;
-
+  margin: 2rem 1rem;
   padding: 2rem;
 }
 
@@ -432,9 +445,11 @@ footer {
   }
   .section-accommodation {
     width: 100%;
+    order: 1;
   }
   .popular-accommodation {
     width: 100%;
+    margin: 0;
   }
 
   .container-activities {
@@ -474,10 +489,59 @@ footer {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .container-accommodation {
+    justify-content: space-evenly;
+  }
+  .accommodation {
+    min-width: 38%;
+  }
+}
+/* @media screen and (min-width: 480px) {
+  .search-icon {
+    display: none;
+  }
+} */
 @media screen and (max-width: 480px) {
-  /* MQ footer */
   main {
     margin: 1.5rem;
+  }
+  .searchbar {
+    justify-content: space-between;
+  }
+  .searchbar-input {
+    width: 100%;
+  }
+  .searchbar-button {
+    border-radius: 15px;
+    margin: 0 -0.7rem;
+  }
+  .research-text {
+    display: none;
+  }
+  .fa-search,
+  .search-icon {
+    display: block;
+  }
+
+  .filter-title {
+    width: 100%;
+  }
+
+  .section-accommodation {
+    background: none;
+  }
+
+  .accommodation {
+    width: 100%;
+    box-shadow: 1rem 1rem 1rem 2rem #f2f2f2;
+    margin: 0.5rem 0;
+  }
+  .popular-accommodation {
+    border-radius: 0;
+  }
+  .accommodation-title-mq {
+    margin-bottom: 1rem;
   }
   .container-activities {
     display: grid;
