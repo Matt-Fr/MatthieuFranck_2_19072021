@@ -90,6 +90,8 @@ nav {
 .research-text {
   font-weight: bold;
 }
+
+.fas .fa-search,
 .search-icon,
 .fa-search {
   display: none;
@@ -99,6 +101,7 @@ nav {
 .info {
   display: flex;
   align-items: center;
+  margin: 1.5rem 0;
 }
 
 .info-logo {
@@ -191,15 +194,16 @@ nav {
 
 .accommodation-main-container {
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 .popular-accommodation {
   background: #f2f2f2;
-  margin: 0 1rem;
+
   border-radius: 20px;
   padding: 2rem;
-  width: 30%;
-  margin: 2rem 1rem;
+  width: 35%;
+  margin: 2rem 0 2rem 2rem;
 }
 .popular-header {
   display: flex;
@@ -250,9 +254,10 @@ nav {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 70%;
-  margin: 2rem 1rem;
+  justify-content: space-evenly;
+
+  width: 65%;
+  margin: 2rem 0;
   padding: 2rem;
 }
 
@@ -356,7 +361,7 @@ nav {
   border-radius: 20px;
   flex-wrap: wrap;
   overflow: hidden;
-  box-shadow: 1rem 1rem 1rem 2rem #f2f2f2;
+  box-shadow: 0 0 0.5rem 0.5rem #f2f2f2;
   text-decoration: none;
 }
 
@@ -506,11 +511,15 @@ footer {
   main {
     margin: 1.5rem;
   }
+  .section-title {
+    font-size: 1.3rem;
+  }
   .searchbar {
     justify-content: space-between;
   }
   .searchbar-input {
     width: 100%;
+    font-weight: bold;
   }
   .searchbar-button {
     border-radius: 15px;
@@ -527,6 +536,9 @@ footer {
   .filter-title {
     width: 100%;
   }
+  .filter-link {
+    margin: 0.3rem 0.3rem;
+  }
 
   .section-accommodation {
     background: none;
@@ -534,7 +546,7 @@ footer {
 
   .accommodation {
     width: 100%;
-    box-shadow: 1rem 1rem 1rem 2rem #f2f2f2;
+    box-shadow: 0 0 0.5rem 0.5rem #f2f2f2;
     margin: 0.5rem 0;
   }
   .popular-accommodation {
