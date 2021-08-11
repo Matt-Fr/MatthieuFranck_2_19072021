@@ -18,30 +18,34 @@ header {
   justify-content: space-between;
   margin: 0 3rem;
 }
-nav {
-  width: 40%;
-}
+
 .navbar {
   display: flex;
   justify-content: space-around;
   margin: 0;
 }
+.navbar li {
+  border-top: 2px solid transparent;
+}
+.navbar li.active,
+.navbar li:hover {
+  border-top: 2px solid #0065fc;
+}
 
 .navbar-element {
-  display: flex;
-  justify-content: space-around;
-  padding: 2rem;
+  padding: 0;
   list-style-type: none;
-  width: 33%;
 }
-.navbar-element-hebergement {
+/* .navbar-element-hebergement {
   border-top: 2px solid #0065fc;
 }
 .navbar-element:hover {
   border-top: 2px solid #0065fc;
-}
+} */
 .navbar-link {
   text-decoration: none;
+  padding: 2rem;
+  display: block;
 }
 .navbar-element:hover {
   color: #0065fc;
@@ -76,6 +80,7 @@ nav {
   padding: 1rem;
   font-size: 1rem;
   border: 1px solid #f2f2f2;
+  font-weight: bold;
 }
 .searchbar-button {
   padding: 1rem;
@@ -210,6 +215,11 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+
+.popular-title {
+  margin: 0;
+}
+
 .logo-arrow {
   font-size: 1.5rem;
 }
@@ -227,8 +237,7 @@ nav {
 
 .accommodation-popular {
   display: flex;
-
-  margin: 1rem;
+  margin: 1rem 0;
   background: white;
   text-decoration: none;
   border: 5px solid white;

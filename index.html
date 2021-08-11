@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <title>Project 2 Reservia</title>
-    <script
-      src="https://kit.fontawesome.com/2d716ee440.js"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project 2 Reservia</title>
   </head>
   <body>
     <!-- Header -->
@@ -24,7 +28,7 @@
       <img src="./images/logo/Reservia.svg" alt="logo" />
       <nav>
         <ul class="navbar">
-          <li class="navbar-element navbar-element-hebergement">
+          <li class="navbar-element navbar-element-hebergement active">
             <a
               class="navbar-link link-hebergements"
               href="#section-accommodation"
@@ -55,11 +59,7 @@
       </div>
       <div class="searchbar">
         <i class="fas fa-map-marker-alt"></i>
-        <input
-          class="searchbar-input"
-          type="text"
-          placeholder="Marseille, France"
-        />
+        <input class="searchbar-input" type="text" value="Marseille, France" />
         <button class="searchbar-button">
           <span class="research-text">Rechercher</span>
           <i class="fas fa-search search-icon"></i>
