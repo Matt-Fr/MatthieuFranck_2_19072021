@@ -201,6 +201,7 @@ header {
   height: 8.5rem;
   overflow: hidden;
   color: black;
+  box-shadow: 0 0 0.5rem 0.5rem #f2f2f2;
 }
 .popular-img {
   min-width: 38%;
@@ -249,6 +250,7 @@ header {
   height: 12rem;
   overflow: hidden;
   color: black;
+  box-shadow: 0 0 0.5rem 0.5rem #f2f2f2;
 }
 .accommodation-img {
   min-width: 100%;
@@ -369,64 +371,6 @@ footer {
 
 /* Media Queries */
 
-@media screen and (min-width: 599px) {
-  .nav-small {
-    display: none;
-  }
-  .navbar li {
-    border-top: 2px solid transparent;
-  }
-  .navbar li.active,
-  .navbar li:hover {
-    border-top: 2px solid #0065fc;
-  }
-}
-@media screen and (max-width: 600px) {
-  header {
-    margin: 0;
-    display: grid;
-
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr;
-  }
-
-  .img-logo {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    padding: 2rem;
-  }
-  nav {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    text-align: left;
-  }
-
-  .nav-small {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-    width: 100%;
-  }
-  .nav-small .navbar {
-    width: 100%;
-  }
-  .nav-small ul li {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-  .nav-small ul {
-    padding: 0;
-  }
-
-  .nav-small li {
-    border-bottom: 2px solid #f2f2f2;
-  }
-  .nav-small li.active,
-  .nav-small li:hover {
-    border-bottom: 2px solid #0065fc;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .accommodation-main-container {
     flex-direction: column;
@@ -493,6 +437,65 @@ footer {
     min-width: 38%;
   }
 }
+
+@media screen and (min-width: 599px) {
+  .nav-small {
+    display: none;
+  }
+  .navbar li {
+    border-top: 2px solid transparent;
+  }
+  .navbar li.active,
+  .navbar li:hover {
+    border-top: 2px solid #0065fc;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    margin: 0;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+  }
+
+  .img-logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 1rem;
+  }
+  nav {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    text-align: left;
+  }
+
+  .nav-small {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    width: 100%;
+  }
+  .nav-small .navbar {
+    width: 100%;
+  }
+  .nav-small ul li {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-small ul {
+    padding: 0;
+  }
+
+  .nav-small li {
+    border-bottom: 2px solid #f2f2f2;
+  }
+  .nav-small li.active,
+  .nav-small li:hover {
+    border-bottom: 2px solid #0065fc;
+  }
+}
+
 /* @media screen and (min-width: 480px) {
   .search-icon {
     display: none;
