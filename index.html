@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Project 2 Reservia</title>
   </head>
   <body>
@@ -75,9 +75,14 @@
       </div>
       <div class="searchbar">
         <i class="fas fa-map-marker-alt"></i>
-        <input class="searchbar-input" type="text" value="Marseille, France" />
+        <input
+          id="search"
+          class="searchbar-input"
+          type="text"
+          value="Marseille, France"
+        />
         <button class="searchbar-button">
-          <span class="research-text">Rechercher</span>
+          <label for="search" class="research-text">Rechercher</label>
           <i class="fas fa-search search-icon"></i>
         </button>
       </div>
