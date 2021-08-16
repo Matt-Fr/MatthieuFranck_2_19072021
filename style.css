@@ -38,9 +38,10 @@ header {
 .navbar-element:hover {
   color: #0065fc;
 }
-.link-activites:visited {
+.navbar-link {
   color: black;
 }
+
 .link-activites:hover {
   color: #0065fc;
 }
