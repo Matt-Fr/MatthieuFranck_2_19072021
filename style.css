@@ -83,6 +83,7 @@ header {
 
 .research-text {
   font-weight: bold;
+  cursor: pointer;
 }
 
 .fas .fa-search,
